@@ -1,7 +1,7 @@
-import { WORDS } from './data.ts'
-import { shuffle, isLetterKeyPressed, calcStatistics } from './commonFunctions.ts';
-import { lettersContainer, render, renderAnswerContianer, renderError, renderStatisticsModal, renderContinueModal } from './render.ts'
-import { IState, IStateItem, IStatistics } from './interfaces.ts';
+import { WORDS } from './data'
+import { shuffle, isLetterKeyPressed, calcStatistics } from './commonFunctions';
+import { lettersContainer, render, renderAnswerContianer, renderError, renderStatisticsModal, renderContinueModal } from './render'
+import { IState, IStateItem, IStatistics } from './interfaces';
 
 const initialState: IState<IStateItem> = {
     currentItemNumber: 0,

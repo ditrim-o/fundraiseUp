@@ -19,6 +19,9 @@ module.exports = {
         }),
         new CleanWebpackPlugin()
     ],
+    resolve: {
+        extensions: ['.js', '.ts']
+    },
     module: {
         rules: [
             {

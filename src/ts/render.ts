@@ -1,6 +1,6 @@
-import { state } from './stateHandler.ts';
-import { IStatistics } from './interfaces.ts';
-import { init, initFromLS } from './stateHandler.ts';
+import { state } from './stateHandler';
+import { IStatistics } from './interfaces';
+import { init, initFromLS } from './stateHandler';
 
 
 export const lettersContainer: HTMLDivElement | null = document.querySelector('#letters')
