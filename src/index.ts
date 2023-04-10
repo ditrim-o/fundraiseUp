@@ -1,4 +1,6 @@
 import './styles/styles.css'
-import { init } from './ts/stateHandler'
+import { init } from './ts/stateHandler/stateHandler'
 
-document.addEventListener('DOMContentLoaded', init)
+document.addEventListener('DOMContentLoaded', () => {
+    init()
+})
