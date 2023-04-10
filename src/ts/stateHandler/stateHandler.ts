@@ -52,15 +52,17 @@ export const init = () => {
         Object.assign(state, initialState)
         state.stateItems = []
         const shuffled = [...shuffle(WORDS)]
-        shuffled.forEach((item) => {
-            state.stateItems.push({
-                word: item.split(''),
-                shuffledWord: shuffle(item.split('')),
-                slovedPart: [],
-                isSloved: undefined,
-                errorsCount: 0,
-                letterNubmer: 0,
-            })
+        shuffled.forEach((item, i) => {
+            if (i < 6) {
+                state.stateItems.push({
+                    word: item.split(''),
+                    shuffledWord: shuffle(item.split('')),
+                    slovedPart: [],
+                    isSloved: undefined,
+                    errorsCount: 0,
+                    letterNubmer: 0,
+                })
+            }
         })
         render()
         renderAnswerContianer()
